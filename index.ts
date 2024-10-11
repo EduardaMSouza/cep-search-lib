@@ -1,7 +1,9 @@
 import CepSearch from "./CepSearch";
 import useCep from "./useCep";
 
-export default {
+const components = {
     CepSearch,
     useCep
-}
+};
+
+export default components;
