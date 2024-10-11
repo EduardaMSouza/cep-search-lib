@@ -1,6 +1,6 @@
 {
   "name": "cep-search-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lib para achar endereço por cep",
   "main": "index.js",
   "scripts": {
