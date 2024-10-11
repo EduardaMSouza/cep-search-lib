@@ -1,3 +1,26 @@
+# Sumário
+
+- [Instalação e Configuração](#instalação-e-configuração)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Instalação](#instalação)
+  - [Feats Implementadas](#feats-implementadas)
+- [useCep Hook - Documentação](#usecep-hook---documentação)
+  - [Exemplo de uso](#exemplo-de-uso)
+  - [Retornos](#retornos)
+    - [cep](#cep)
+    - [setCep](#setcep)
+    - [endereco](#endereco)
+    - [fetchEndereco](#fetchendereco)
+    - [tratamentos de erros](#tratamentos-de-erros)
+      - [1. CEP inválido ou formato incorreto](#1-cep-inválido-ou-formato-incorreto)
+      - [2. CEP não encontrado](#2-cep-não-encontrado)
+      - [3. Erro na requisição ou problema na API](#3-erro-na-requisição-ou-problema-na-api)
+- [CepSearch Component - Documentação](#cepsearch-component---documentação)
+  - [Exemplo de Uso](#exemplo-de-uso-1)
+  - [Estrutura Visual do Componente](#estrutura-visual-do-componente)
+  - [Propriedades (cepComponentProps)](#propriedades-cepcomponentprops)
+    - [Propriedades disponíveis](#propriedades-disponíveis)
+
 # Instalação e Configuração
 
 Esta biblioteca foi desenvolvida para facilitar a busca de endereços a partir de CEPs brasileiros, utilizando a API pública do ViaCEP. Ela oferece dois recursos principais: um Hook chamado useCep e um componente React chamado CepSearch. Vamos mostrar como instalar e configurar essa biblioteca.
