@@ -1,12 +1,27 @@
 {
   "name": "cep-search-lib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Lib para achar endereço por cep",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cep"],
+  "keywords": [
+    "cep",
+    "viaCEP",
+    "endereço",
+    "busca",
+    "consulta",
+    "localização",
+    "react",
+    "react-hook",
+    "componente-react",
+    "brasil",
+    "brazil",
+    "br",
+    "endereço-brasileiro",
+    "cep-brasileiro"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {

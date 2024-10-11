@@ -19,7 +19,7 @@
   - [Exemplo de Uso](#exemplo-de-uso-1)
   - [Estrutura Visual do Componente](#estrutura-visual-do-componente)
   - [Propriedades (cepComponentProps)](#propriedades-cepcomponentprops)
-    - [Propriedades disponíveis](#propriedades-disponíveis)
+    - [Propriedades de estilização disponíveis](#propriedades-disponíveis)
 
 # Instalação e Configuração
 
