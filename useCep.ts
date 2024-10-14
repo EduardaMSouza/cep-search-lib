@@ -19,7 +19,11 @@ interface cepResponse {
   erro: boolean;
 }
 
-const useCep = () => {
+interface useCepProps {
+  handleToasts?: boolean; 
+}
+
+const useCep = ({ handleToasts = true }: useCepProps = {}) => {
   const [cep, setCep] = useState("");
   const [endereco, setEndereco] = useState<Partial<cepResponse>>({
     cep: "",
@@ -41,19 +45,20 @@ const useCep = () => {
   const fetchEndereco = async () => {
     try {
       if (!cep || cep.length !== 8 || isNaN(Number(cep))) {
-        toast.error('Por favor, insira um CEP válido com 8 dígitos numéricos.');
+        if (handleToasts) {
+          toast.error('Por favor, insira um CEP válido com 8 dígitos numéricos.');
+        }
         return;
       }
 
       const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
-      
       const data: cepResponse = await response.json();
 
       if (data.erro) {
-
-        toast.error('CEP não encontrado. Por favor, insira um CEP válido.');
+        if (handleToasts) {
+          toast.error('CEP não encontrado. Por favor, insira um CEP válido.');
+        }
         return;
-
       }
 
       setEndereco({
@@ -72,10 +77,14 @@ const useCep = () => {
         siafi: data.siafi,
       });
 
-      toast.success('Endereço encontrado com sucesso')
+      if (handleToasts) {
+        toast.success('Endereço encontrado com sucesso');
+      }
 
     } catch (error) {
-      toast.error('Houve um problema ao buscar o endereço.');
+      if (handleToasts) {
+        toast.error('Houve um problema ao buscar o endereço.');
+      }
       console.error("Erro ao buscar o CEP", error);
     }
   };

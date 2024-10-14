@@ -12,6 +12,7 @@
     - [endereco](#endereco)
     - [fetchEndereco](#fetchendereco)
     - [tratamentos de erros](#tratamentos-de-erros)
+      - [Utilizando a flag handleToasts](#utilizando-a-flag-handletoasts)
       - [1. CEP inválido ou formato incorreto](#1-cep-inválido-ou-formato-incorreto)
       - [2. CEP não encontrado](#2-cep-não-encontrado)
       - [3. Erro na requisição ou problema na API](#3-erro-na-requisição-ou-problema-na-api)
@@ -133,7 +134,12 @@ Função que aciona a busca do endereço com base no CEP informado.
 
 ### tratamentos de erros 
 
-O Hook lida com diferentes tipos de erros, exibindo mensagens apropriadas através de um toast.
+O Hook lida com diferentes tipos de erros, exibindo mensagens apropriadas através de um toast (opcionalmente). Você pode controlar a exibição dessas mensagens utilizando a flag handleToasts.
+
+#### Utilizando a flag **handleToasts**
+
+- **handleToasts: true** (padrão): Exibe mensagens de erro e sucesso utilizando toasts. 
+- **handleToasts: false** (padrão): Não exibe toasts. O controle das mensagens é de sua responsabilidadew.
 
 ### casos de erros 
 
