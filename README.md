@@ -4,6 +4,7 @@
   - [Pré-requisitos](#pré-requisitos)
   - [Instalação](#instalação)
   - [Feats Implementadas](#feats-implementadas)
+- [Dependências](#dependências)
 - [useCep Hook - Documentação](#usecep-hook---documentação)
   - [Exemplo de uso](#exemplo-de-uso)
   - [Retornos](#retornos)
@@ -54,6 +55,19 @@ Atualmente, esta biblioteca possui duas funcionalidades principais, que facilita
 
 **Agora que você instalou a biblioteca, veja abaixo os detalhes de uso para cada funcionalidade implementada.**
 
+# Dependências
+
+Esta biblioteca utiliza as seguintes versões de dependências para garantir a compatibilidade e o funcionamento correto:
+
+```
+{
+  "@mui/material": "^6.1.3",
+  "@mui/system": "^6.1.3",
+  "next": "^14.2.15",
+  "react": "^18.3.1",
+  "react-toastify": "^10.0.5"
+}
+```
 
 # useCep Hook - Documentação
 
